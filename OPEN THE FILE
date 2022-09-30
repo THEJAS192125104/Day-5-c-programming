@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    FILE *fptr;
+  
+    char filename[100], c;
+  
+    printf("Enter the filename to open \n");
+    scanf("%s","filename");
+  
+    fptr = fopen(filename, "r");
+    if (fptr == NULL)
+    {
+        printf("Cannot open file \n");
+     return 0;   
+    }
+}
+  
