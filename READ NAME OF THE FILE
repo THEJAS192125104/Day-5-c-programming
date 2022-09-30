@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+	char name[50];
+	int marks,i,n;
+	printf("Enter student roll no: ");
+	scanf("%d",&n);
+	FILE *fptr;
+	fptr=(fopen("C:\\Users\\Administrator\\TE.txt","w"));
+	if(fptr==NULL) {
+		printf("Error!");
+	}
+	for (i=0;i<2;++i) {
+		printf("For student%d\nEnter name: ",i+1);
+		scanf("%s",name);
+	}
+	fclose(fptr);
+	return 0;
+}
